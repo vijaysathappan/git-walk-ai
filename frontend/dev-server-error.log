@@ -1,0 +1,8 @@
+<i> [webpack-dev-server] [HPM] Proxy created: /api  -> http://localhost:8000
+<i> [webpack-dev-server] Project is running at:
+<i> [webpack-dev-server] Loopback: [36mhttps://localhost:3000/[39m, [36mhttps://[::1]:3000/[39m
+<i> [webpack-dev-server] On Your Network (IPv4): [36mhttps://192.168.29.7:3000/[39m
+<i> [webpack-dev-server] Content not from webpack is served from '[36mC:\Projects\boardwalk-clone\excel-sqlite-sync\frontend\public[39m' directory
+<i> [webpack-dev-server] 404s will fallback to '[36m/index.html[39m'
+(node:17208) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)

@@ -1,0 +1,17 @@
+fastapi==0.136.3
+uvicorn[standard]==0.48.0
+pandas==3.0.3
+openpyxl==3.1.5
+oletools==0.60.2  # Virtual Run: real VBA source extraction (backend/app/macros/extractor.py)
+python-multipart==0.0.30  # keep >=0.0.7: versions below have known CVEs (GHSA-2jv5-9r88-3w3p)
+pydantic==2.13.4
+sqlalchemy==2.0.50
+alembic==1.18.5   # not yet wired — see Phase 5 (database): no migration currently runs, DDL lives in app/store/schema.py
+asyncpg==0.31.0   # not yet wired — see Phase 5 (database): the app talks to SQLite via the stdlib sqlite3 module, not Postgres
+redis==8.0.0      # not yet wired — see Phase 5 (database): no cache/queue backend is in use yet
+boto3==1.35.36
+paramiko==3.5.0
+zstandard==0.25.0
+cryptography==49.0.0  # AES-GCM secret envelope (app/secret_store.py)
+defusedxml==0.7.1     # hardened XML parsing for workbook-internal XML (app/openxml_injector.py, app/euc/analyzers.py)
+pytest==9.1.1     # test runner — tests themselves are written with unittest, but are executed via pytest
